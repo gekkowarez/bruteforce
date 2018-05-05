@@ -32,10 +32,9 @@ let strategies = dirCont.filter( function( elm ) {return elm.match(/.*\.(toml)/i
 	baseConfig = fs.readFileSync(configFile, 'utf8');
 	baseConfig = replaceall("module.exports = config;", "", baseConfig);
 	if (fs.existsSync(outputConfigFile)){
-		fs.unlinkSync(outputConfigFile);
-		fs.appendFileSync(outputConfigFile, baseConfig, encoding = 'utf8');			
+		fs.unlinkSync(outputConfigFile);	
 	}
-	
+	fs.appendFileSync(outputConfigFile, baseConfig, encoding = 'utf8');		
 	
 for (var i = 0, len = strategies.length; i < len; i++) {
 	stratFileName = strategies[i];
