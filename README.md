@@ -1,4 +1,5 @@
-# Gekko Warez Bruteforce Backtester
+# Gekko Warez Bruteforce Backtester 
+# With added bulk TOML to Gekko Config writer
 
 A swiss army nodejs brute force backtester for Gekko trading bot. Saves time so you can spend more time looking good. 
 
@@ -42,4 +43,7 @@ Then type the following to run the bruteforce app:
 node bruteforce.js
 
 
+# What's this TOML thing do?
+The TOML thing is pretty cool - it takes all the toml files contents, re-writes them into json, then appends them to a Gekko config file. This is pretty awesome for us CLI guys who really don't use the front end but do use Strategy libraries such as the one here:
+https://github.com/xFFFFF/Gekko-Strategies/
 
